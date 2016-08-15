@@ -4,6 +4,9 @@ Enables being able to lookup services from within the Router.map callback.
 
 This is useful for conditionally registering routes or localizing paths.
 
+This serves as a monkey patch for:
+https://github.com/emberjs/ember.js/issues/13840
+
 ```js
 Router.map(function() {
   let session = this.service('session');
