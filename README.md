@@ -1,4 +1,4 @@
-# Ember-routermap-inject-service
+# ember-routermap-inject-service
 
 Enables being able to lookup services from within the Router.map callback.
 
@@ -61,3 +61,4 @@ export default {
 * `ember build`
 
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+# ember-routermap-inject-service
