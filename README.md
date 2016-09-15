@@ -2,7 +2,7 @@
 
 Enables being able to lookup services from within the Router.map callback.
 
-This is useful for conditionally registering routes or localizing paths.
+This is useful for conditionally registering routes or localizing paths based upon state known at app boot time.
 
 This serves as a monkey patch for:
 https://github.com/emberjs/ember.js/issues/13840
