@@ -9,6 +9,7 @@ https://github.com/emberjs/ember.js/issues/13840
 
 ```js
 Router.map(function() {
+  let i18n = this.service('i18n');
   let session = this.service('session');
 
   if (session.get('isAdmin')) {
@@ -17,8 +18,8 @@ Router.map(function() {
     this.route('home', { path: '/' });
   }
 
-  this.route('about', { path: '/' + session.translate('urls.about') });
-  this.route('contact', { path: '/' + session.translate('urls.contact') });
+  this.route('about', { path: '/' + i18n.t('urls.about') });
+  this.route('contact', { path: '/' + i18n.t('urls.contact') });
 });
 ```
 
